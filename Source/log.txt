@@ -1,5 +1,0 @@
-To fix:
-
-1. Nav not being sticky
-2. Mobile responsive for navbar and socials 
-
