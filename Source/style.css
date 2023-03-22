@@ -1,0 +1,473 @@
+/* CSS for all  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0a192f;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+
+div.clear_fix {
+    clear: both;
+    float: none;
+}
+
+body{
+    height: 7000px;
+}
+
+/* CSS for navbar */
+
+
+
+section.nav {
+    width: 100%;
+    height: 70px;
+    background-color: #0a192f;
+
+
+    /* border-bottom: 2px solid rgb(1, 2, 11);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+
+
+    position:sticky;
+    top:0px;
+    z-index: 2;
+ 
+}
+
+section.nav div.nav_icon img {
+    /* width:2.5%; */
+    height: 60px;
+    float: left;
+    display: inline;
+
+}   
+
+section.nav div.nav_menu {
+    width: 50%;
+    float:right;
+
+
+
+
+
+  
+    
+    /* position:absolute; */
+    /* right: 4%; */
+    /* left:50%; */
+
+
+
+}
+
+
+div.nav_menu ul li {
+    list-style-type: none;
+    float: left;
+    margin: 1% 0%;
+    padding: 1% 6%;
+
+    position:relative;
+
+    animation:nav_animation 1.5s;
+
+}
+
+div.nav_menu ul li a , div.nav_menu ul li#blog{
+    text-decoration: none;
+    color: white;
+    font-weight: 250;
+    font-size: 1vw;
+}
+
+div.nav_menu ul li a:hover {
+    font-weight: 300;
+    color: yellow;
+}
+
+div.nav_menu ul li span {
+    color: yellow;
+}
+
+
+div.nav_menu ul li#blog {
+    border-radius: 7px;
+   
+    border: 1px solid yellow;
+}
+
+div.nav_menu ul li#blog:hover {
+    color: yellow;
+    font-weight: 300;
+    background-color: #10284b;
+    cursor: pointer;
+}
+
+
+/* CSS for scroll bar  */
+
+  
+ ::-webkit-scrollbar{
+     width:10px;
+    background-color: #10284b;
+ }
+
+
+ ::-webkit-scrollbar-thumb{
+    background-color:#233554;
+    border-radius: 10px;
+
+
+    
+    
+ }
+
+
+
+/* CSS for social links  */
+
+
+
+i#facebook , i#instagram, i#linkedin, i#github{
+    color: white;
+    position: fixed;
+    left: 1%;
+
+    
+}
+
+i.social_icons:hover{
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 0 );
+    border-radius: 50%;
+}
+
+
+
+i#facebook{
+ 
+    bottom:50%;
+}
+i#instagram{
+   
+    bottom:45%;
+}
+i#linkedin{
+
+    bottom:40%;
+}
+i#github{
+
+    bottom:35%;
+}
+
+hr#vertical-one{
+    position: fixed;
+    left:1.5%;
+    bottom:0%;
+    height: 32%;
+
+}
+
+hr#vertical-two{
+    position: fixed;
+    right:1.5%;
+    bottom:0%;
+    height: 32%;
+}
+
+div.email{
+    position: fixed;
+    right:1%;
+    bottom:34.5%;
+    z-index: 3;
+}
+
+
+
+div.email a{
+    writing-mode: vertical-lr;
+    text-orientation:rl;
+    text-decoration: none;
+    color: white;
+    font-weight: 250;
+    font-size: 14px;
+
+}
+
+div.email a:hover{
+    color:yellow;
+    font-weight: 300;
+
+ 
+}
+
+
+
+/* CSS for social section (mobile view) */
+
+div.email_mobile {
+  text-align: center;
+
+}
+
+div.email_mobile a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: 200;
+}
+
+div.profiles_mobile{
+  margin-left: 25%;
+    
+}
+
+div.profiles_mobile i{
+    margin-right: 4%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+  
+}
+
+div.profiles_mobile i:first-of-type{
+    margin-left: 4%;
+}
+
+.socials_mobile{
+    display: none;
+    
+    
+}
+
+
+
+/* CSS for home */
+
+.home{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.home div#title{
+    color:yellow;
+
+    font-weight: 350;
+    padding-top: 9%;
+    font-size: 1.5vw;
+
+
+
+}
+
+.home div#name{
+    color: white;
+    font-size: clamp(0.5rem,4vw,4rem);
+    background-color: #10284b;
+    margin-top: 11%;
+    height: 70%;
+    /* border-radius: 1rem; */
+
+
+    
+}
+
+.home div#profile_image img{
+    /* height: 50%; */
+    width: 30vw;
+    
+}
+
+
+
+.home div#profile_image{
+    position: relative;
+    /* animation: profile_image_animation 3s; */
+
+}
+
+
+  
+
+
+
+
+
+@keyframes nav_animation {
+    from {top: -50px;}
+    to {top: 0px;}
+
+}
+
+
+
+
+
+
+
+
+
+/* CSS for description  */
+
+section.description{
+    width: 44%;
+   float: right;
+   color: white;
+   margin-top: -10%;
+   margin-right: 3%;
+   font-size: 1vw;
+   position:relative;
+    /* animation:description_animation 3s; */
+    
+}
+
+
+i#skills{
+    padding: 10px;
+    color: #7cabf1;
+    font-size: 3vw;
+}
+
+
+
+
+/* CSS for about section  */
+
+.about{
+    width: 60%;
+    margin-left:15vw;
+    margin-top: 20vh;
+
+    color:white;
+    position: relative;
+    top:10vh;
+}
+
+
+  @keyframes scroll_animation {
+    from {bottom: -50vh;}
+    to {bottom: 0vh;}
+
+
+
+}
+
+
+hr#horizontal-one{
+    /* position:relative; */
+    /* bottom:2vh; */
+    width: 25%;
+    /* margin-left: 28%; */
+    /* margin-left:12.5vw; */
+    /* margin-top: -2%; */
+    opacity: 0.5;
+    height: 0.1vh;
+}
+
+.about h2{
+    font-size: 2vw;
+
+}
+
+.about p{
+    font-size: 1vw;
+}
+
+span#no{
+    color: yellow;
+    font-size: 2vw;
+}
+
+
+/* CSS for animations  */
+
+.hidden{
+    opacity: 0;
+    transition:all 2s ease-in;
+}
+
+.show{
+    opacity: 1;
+}
+
+/* CSS for Responsiveness  */
+
+
+/* responsive navbar  */
+
+@media screen and (max-width:1200px) {
+    section.nav div.nav_menu {
+        width: 60%;
+        float:right;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+ 
+        section.nav div.nav_menu {
+            width: 80%;
+            float:right;
+        }
+
+        section.about{
+            margin-top:20vw;
+        }
+}
+
+@media screen and (max-width:700px) {
+ 
+    section.nav div.nav_menu {
+        width: 92%;
+        float:right;
+    }
+
+    section.about{
+        margin-top:30vw;
+    }
+}
+
+@media screen and (max-width:600px){
+    .socials_mobile{
+      display: block;
+     /* margin-left: 20vw; */
+      
+      position:fixed;
+      bottom: 0px;
+      left: 20%;
+    }
+
+    .socials , .nav{
+        display: none;
+    }
+
+   .description{
+    position:relative;
+    /* top:10vw; */
+    right: 10vw;
+
+   }
+}
+
+
+@media screen and (max-width:400px){
+    section.about{
+        margin-top:20vh;
+    }
+}
+
+
+@media screen and (max-width:300px){
+    section.about{
+        margin-top:30vh;
+    }
+}
