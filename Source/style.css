@@ -1,0 +1,778 @@
+/* CSS for all  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0a192f;
+   
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+div.clear_fix {
+    clear: both;
+    float: none;
+}
+
+body {
+    /* height: 3000px; */
+}
+
+/* CSS for navbar */
+
+
+
+section.nav {
+    width: 100%;
+    height: 70px;
+    background-color: #0a192f;
+
+
+    /* border-bottom: 2px solid rgb(1, 2, 11);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+
+
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+}
+
+section.nav div.nav_icon img {
+    /* width:2.5%; */
+    height: 60px;
+    float: left;
+    display: inline;
+
+}
+
+section.nav div.nav_menu {
+    width: 50%;
+    float: right;
+
+
+
+
+
+
+
+    /* position:absolute; */
+    /* right: 4%; */
+    /* left:50%; */
+
+
+
+}
+
+
+div.nav_menu ul li {
+    list-style-type: none;
+    float: left;
+    margin: 1% 0%;
+    padding: 1% 6%;
+
+    position: relative;
+
+    animation: nav_animation 1.5s;
+
+}
+
+div.nav_menu ul li a,
+div.nav_menu ul li#blog {
+    text-decoration: none;
+    color: white;
+    font-weight: 250;
+    font-size: 1vw;
+}
+
+div.nav_menu ul li a:hover {
+    font-weight: 300;
+    color: yellow;
+}
+
+div.nav_menu ul li span {
+    color: yellow;
+}
+
+
+div.nav_menu ul li#blog {
+    border-radius: 7px;
+
+    border: 1px solid yellow;
+}
+
+div.nav_menu ul li#blog:hover {
+    color: yellow;
+    font-weight: 300;
+    background-color: #10284b;
+    cursor: pointer;
+}
+
+
+/* CSS for scroll bar  */
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #10284b;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #233554;
+    border-radius: 10px;
+
+
+
+
+}
+
+
+
+/* CSS for social links  */
+
+
+
+i#facebook,
+i#instagram,
+i#linkedin,
+i#github {
+    color: white;
+    position: fixed;
+    left: 1%;
+
+
+}
+
+i.social_icons:hover {
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 0);
+    border-radius: 50%;
+}
+
+
+
+i#facebook {
+
+    bottom: 50%;
+}
+
+i#instagram {
+
+    bottom: 45%;
+}
+
+i#linkedin {
+
+    bottom: 40%;
+}
+
+i#github {
+
+    bottom: 35%;
+}
+
+hr#vertical-one {
+    position: fixed;
+    left: 1.5%;
+    bottom: 0%;
+    height: 32%;
+
+}
+
+hr#vertical-two {
+    position: fixed;
+    right: 1.5%;
+    bottom: 0%;
+    height: 32%;
+}
+
+div.email {
+    position: fixed;
+    right: 1%;
+    bottom: 34.5%;
+    z-index: 3;
+}
+
+
+
+div.email a {
+    writing-mode: vertical-lr;
+    text-orientation: rl;
+    text-decoration: none;
+    color: white;
+    font-weight: 250;
+    font-size: 14px;
+
+}
+
+div.email a:hover {
+    color: yellow;
+    font-weight: 300;
+
+
+}
+
+
+
+/* CSS for social section (mobile view) */
+
+div.email_mobile {
+    text-align: center;
+
+}
+
+div.email_mobile a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: 200;
+}
+
+div.profiles_mobile {
+    margin-left: 25%;
+
+}
+
+div.profiles_mobile i {
+    margin-right: 4%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+
+.socials_mobile {
+    display: none;
+    /* margin-left: 4rem; */
+}
+
+
+
+/* CSS for home */
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.home div#title {
+    color: yellow;
+
+    font-weight: 350;
+    padding-top: 9%;
+    /* font-size: 1.5vw; */
+
+
+
+}
+
+.home div#name {
+    color: white;
+    font-size: clamp(0.7rem, 4vw, 4rem);
+    background-color: #10284b;
+    margin-top: 11%;
+    height: 70%;
+    /* border-radius: 1rem; */
+
+
+
+}
+
+.home div#profile_image img {
+    /* height: 50%; */
+    width: 30vw;
+
+}
+
+
+
+.home div#profile_image {
+    position: relative;
+    /* animation: profile_image_animation 3s; */
+
+}
+
+
+
+
+
+
+
+
+@keyframes nav_animation {
+    from {
+        top: -50px;
+    }
+
+    to {
+        top: 0px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* CSS for description  */
+
+section.description {
+    width: 50%;
+    min-width: 250px;
+    float: right;
+    color: white;
+    margin-top: -10%;
+    margin-right: 3%;
+    /* font-size: 1vw; */
+    position: relative;
+    /* animation:description_animation 3s; */
+
+}
+
+
+i#skills {
+    padding: 10px;
+    color: #7cabf1;
+    font-size: 3vw;
+}
+
+
+
+
+/* CSS for about section  */
+
+.about {
+    width: 60%;
+    min-width: 250px;
+    margin-left: 15vw;
+    margin-top: 20vh;
+
+    color: white;
+    position: relative;
+    top: 10vh;
+}
+
+
+@keyframes scroll_animation {
+    from {
+        bottom: -50vh;
+    }
+
+    to {
+        bottom: 0vh;
+    }
+
+
+
+}
+
+
+hr#horizontal-one {
+    /* position:relative; */
+    /* bottom:2vh; */
+    width: 25%;
+    /* margin-left: 28%; */
+    /* margin-left:12.5vw; */
+    /* margin-top: -2%; */
+    opacity: 0.5;
+    height: 0.1vh;
+}
+
+.about h2 {
+    font-size: 2vw;
+
+
+}
+
+.about p {
+    /* font-size: 1vw; */
+}
+
+span#no {
+    color: yellow;
+    font-size: 2vw;
+}
+
+
+
+
+
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.html {
+    width: 90%;
+    background-color: #4d6d9c;
+}
+
+.css {
+    width: 80%;
+    background-color: #4d6d9c;
+}
+
+.js {
+    width: 70%;
+    background-color: #4d6d9c;
+}
+
+.php {
+    width: 65%;
+    background-color: #4d6d9c;
+}
+
+.python {
+    width: 60%;
+    background-color: #4d6d9c;
+}
+
+.mysql {
+    width: 60%;
+    background-color: #4d6d9c;
+}
+
+.c {
+    width: 70%;
+    background-color: #4d6d9c;
+}
+
+.cpp {
+    width: 70%;
+    background-color:#4d6d9c;
+}
+
+
+
+
+
+/* CSS for projects section  */
+
+.project_boxes{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.projects{
+    width: 80%;
+}
+
+
+.project_image{
+    width: 100%;
+}
+
+
+/* CSS for contact section  */
+
+.contact form input{
+    width: 50vw;
+    min-width: 15rem;
+    height: 3rem;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #4d6d9c;
+}
+
+.contact form input:focus{
+    background-color: #0a192f;
+}
+
+button#send{
+    height: 3rem;
+    width: 10rem;
+    background-color: #4d6d9c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    /* margin-left: 15vw; */
+    font-size: 1.3rem;
+    display: block;
+    margin: auto;
+}
+
+button#send:hover{
+    cursor: pointer;
+    background-color: #0a192f;
+
+}
+
+button#send i{
+    color: white;
+    background-color: rgba(1,1,1,0);
+    font-size:1.5rem;
+
+}
+
+button#download_cv{
+    height: 4rem;
+    width: 10rem;
+    background-color: #4d6d9c;
+    border: none;
+    border-radius: 10px;
+    color: white;
+   
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+    margin-left: 30vw;
+}
+
+
+button#download_cv:hover{
+    cursor: pointer;
+    background-color: #0a192f;
+
+}
+
+
+/* CSS for animations  */
+
+.hidden {
+    opacity: 0;
+    transition: all 2s ease-in;
+}
+
+.show {
+    opacity: 1;
+}
+
+/* CSS for Responsiveness  */
+
+
+/* responsive navbar  */
+
+@media screen and (max-width:1200px) {
+    section.nav div.nav_menu {
+        width: 60%;
+        float: right;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+
+    section.nav div.nav_menu {
+        width: 80%;
+        float: right;
+    }
+
+    section.about {
+        margin-top: 20vw;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    section.nav div.nav_menu {
+        /* width: 92%; */
+        float: right;
+    }
+
+    section.about {
+        margin-top: 30vw;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+
+
+    .socials_mobile {
+        display: block;
+        /* margin-left: 20vw; */
+
+        /* position: absolute; */
+        /* bottom: 0px; */
+        /* left: 20%; */
+        /* left: 20%; */
+        height: 2vh;
+    }
+
+
+    .email_mobile{
+        position: relative;
+        /* left: -20vw; */
+    }
+
+    .profiles_mobile{
+        position: relative;
+        left: 12vw;
+    } 
+
+
+
+    .socials,
+    .nav {
+        display: none;
+    }
+
+    i#skills {
+        font-size: 20px;
+    }
+
+    .description {
+        position: relative;
+        top: 5rem;
+        right: 2rem;
+
+
+        font-size: 12px;
+
+    }
+
+
+    .about {
+        /* margin-top: 10rem; */
+        position: relative;
+        top: 12rem;
+        width: 70%;
+        /* font-size: 10px; */
+        /* width: 70%; */
+
+    }
+
+    .about h2 {
+        font-size: 20px;
+        width: 100%;
+        margin-left: -5vw;
+
+    }
+
+    .contact h2{
+        margin-left: -5vw;
+    }
+
+    .about p {
+        font-size: 12px;
+    }
+
+
+    #title {
+        font-size: 12px;
+    }
+
+    form{
+        position: relative;
+        right: 15vw;
+
+    }
+
+
+    button#send{
+        font-size: 1rem;
+        height: 2rem;
+        width: 7rem;
+        margin-left:40vw;
+    }
+
+    button#send i{
+        font-size: 1rem;
+    }
+
+    button#download_cv{
+        font-size: 1rem;
+        height: 2rem;
+        width: 7rem;
+        /* margin-left: 2rem; */
+
+        position: relative;
+        /* left: 12vw; */
+        right:5vw;
+        top:5vw;
+
+        
+        
+    }
+
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:400px) {
+    section.about {
+        margin-top: 20vh;
+    }
+
+
+
+
+}
+
+
+@media screen and (max-width:300px) {
+    section.about {
+        margin-top: 30vh;
+    }
+
+
+    section.description {
+        position: relative;
+        /* top:5rem; */
+        left: 1rem;
+
+
+        /* font-size: 12px; */
+
+        /* width: 30%; */
+
+    }
+}
+
+
+
+@media screen and (max-width:250px) {
+
+
+
+    section.description {
+        /* position:relative; */
+        /* top:5rem; */
+        /* left:15vw; */
+        float: left;
+
+        /* left:2rem; */
+
+
+        /* font-size: 12px; */
+
+        /* width: 30%; */
+
+    }
+}
